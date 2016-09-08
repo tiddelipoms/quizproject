@@ -19,7 +19,9 @@
 </center>
 
  {% for quiz in quizzes %}
- 	<p>{{ quiz.name}}</p>
+ 	<p><a href="{%url 'quiz_page' quiz.quiz_number %}">
+ 	{{ quiz.name}}
+ 	</p></a>
 {% endfor %}
 
 <div class="container">
