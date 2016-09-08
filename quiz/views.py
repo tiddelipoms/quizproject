@@ -40,5 +40,10 @@ def question(request, quiz_number, question_number):
 		"quiz_number": quiz_number,
 	}
 	return render(request, "quiz/question.html", context)
-def results(request):
-	return render(request, "quiz/results.html")
+def results(request, quiz_number):
+	context= {
+		"correct": 12,
+		"total": 20,
+		"quiz_number": quiz_number
+	}
+	return render(request, "quiz/results.html", context)
