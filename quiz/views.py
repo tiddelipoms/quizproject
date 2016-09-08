@@ -4,17 +4,20 @@ quizzes = [
 	{
 		"quiz_number": 1,
 		"name": "Klassiska böcker",
-		"description": "Hur bra kan du dina klassiker?"
+		"description": "Hur bra kan du dina klassiker?",
+		"image": "/static/Eniac.jpg",
 	},
 	{
 		"quiz_number": 2,
 		"name": "Största 1slagen",
-		"description": "Kan du dina lag?"
+		"description": "Kan du dina lag?",
+		"image":"/static/Sej.jpg",
 	},
 	{
 		"quiz_number": 3,
 		"name": "Världens mest kända hackare",
-		"description": "Hackerhistoria är viktigt, kan du den?"
+		"description": "Hackerhistoria är viktigt, kan du den?",
+		"image":"/static/teknisk.jpg",
 	},
 ]
 

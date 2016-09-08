@@ -1,11 +1,20 @@
 body {
-	background-color: #ECD9FF;
+	background-size: cover;
+	background-color: #E2DCE8;
+	padding: 100px;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
 	color: #7E4EAD;
 	text-align: center;
 }
+
+h2 {
+	color: #9B90D4;
+	text-align: center;
+}
+
 .column1 {
 	padding: 50px;
 	background-color: #9B90D4;

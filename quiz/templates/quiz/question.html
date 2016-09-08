@@ -8,22 +8,39 @@
 	</title>
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/Style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 	<h1>{{question_number}}. {{question}}</h1>
-	<p><form action="">
-		<input type="radio" name="answer">{{answer1}}
-	</form></p>
-	<p><form>
-		<input type="radio" name="answer">{{answer2}}
-	</form></p>
-	<p><form>
-		<input type="radio" name="answer">{{ answer3}}
-	</form></p>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4">
+		</div>
+		<div class="col-xs-4">
+		<br>
+			<center>
+				<img src="/static/hjul.jpg" style="width:228px">
+			</center>
+			<br>
+			<br>
+			<form action="">
+				<p><input type="radio" name="answer">{{answer1}}</p>
+				<p><input type="radio" name="answer">{{answer2}}</p>
+				<p><input type="radio" name="answer">{{ answer3}}</p>
+			</form>
+		</div>
+		<div class="col-xs-4">
+		</div>
+	</div>	
+</div>
+
+<center>
 	<p><a href="{% url 'results_page' quiz_number %}">Nästa</a></p>
+</center>
 
 <hr>
-<center>
+<!--<center>
 	<h3> När uppfanns hjulet – ungefär?
 	</h3> <br>
 </center>
@@ -65,7 +82,7 @@
 		<button>Nästa fråga</button>
 	</form>
 	
-</div>
+</div>-->
 
  	
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
