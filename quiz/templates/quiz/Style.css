@@ -1,0 +1,25 @@
+body {
+	background-color: #ECD9FF;
+}
+
+h1 {
+	color: #7E4EAD;
+	text-align: center;
+}
+.column1 {
+	padding: 50px;
+	background-color: #9B90D4;
+} 
+
+.column2 {
+	background-color: #ECE9F0;
+	padding: 50px;
+} 
+
+.column3 {
+	background-color: #9B90D4;
+	padding: 50px;
+} 
+.equal-height {
+	height: 250px;
+}
