@@ -1,34 +1,50 @@
 body {
-	background-size: cover;
-	background-color: #E2DCE8;
+	background-image: url(/static/tapet.jpg);
+	  width: 1200px;
+  	height: 800px;
+	background-size:cover;
+	background-color: #6AD7E6;
 	padding: 100px;
 	font-family: 'Roboto', sans-serif;
+
 }
 
+
+
+
 h1 {
-	color: #7E4EAD;
+	color: #05616E;
 	text-align: center;
 }
 
 h2 {
-	color: #9B90D4;
+	color: #409CA8;
+	text-align: center;
+}
+
+h3 {
+	color: #409CA8;
 	text-align: center;
 }
 
 .column1 {
-	padding: 50px;
+	padding: 10px;
 	background-color: #9B90D4;
 } 
 
 .column2 {
 	background-color: #ECE9F0;
-	padding: 50px;
+	padding: 10px;
 } 
 
 .column3 {
 	background-color: #9B90D4;
-	padding: 50px;
+	padding: 10px;
 } 
 .equal-height {
-	height: 250px;
+	height: 50px;
+}
+.bottom{
+
+    position: absolute; bottom: 0px; 
 }

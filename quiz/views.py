@@ -11,7 +11,7 @@ quizzes = [
 		"quiz_number": 2,
 		"name": "Största 1slagen",
 		"description": "Kan du dina lag?",
-		"image":"/static/Sej.jpg",
+		"image":"/static/madonna.png",
 	},
 	{
 		"quiz_number": 3,

@@ -21,14 +21,30 @@
 </center>-->
 
 <center>
-	 {% for quiz in quizzes %}
+<div class="container">
+	<div class="row">
+	<p>{% for quiz in quizzes %}
+	 <div class="equal-height col-xs-4">	 	
+	 	<p><img src= "{{quiz.image}}" style="width:50%"></p>
+	 	<br>
+	  </div>
+	  {% endfor %}</p>	
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+	<br>
+	<p>{% for quiz in quizzes %} 
 	 <div class="equal-height col-xs-4">
- 		<p><a href="{%url 'quiz_page' quiz.quiz_number %}">
- 		{{ quiz.name}}</p></a>
- 	</div>	
-	{% endfor %}	
+ 		<p><br><br><a href="{%url 'quiz_page' quiz.quiz_number %}">
+ 		{{ quiz.name}}</a></p>
+ 	</div>
+	{% endfor %}</p>
+	</div>
+	 
+</div>	
 </center>
-<hr>
+
 
 <!--<div class="container">
 	<div class="row">
@@ -67,15 +83,19 @@
 	</div>
 </div>-->
 
-
+<hr>
 <center>
+<div class="container">
+<div class="row">
 	<h3>Möt skaparen Ella
 	</h3>
 </center>
-<center><br>
+<center>
 	<img src="/static/Emoji_Big.png" alt="Emoji" style="width:128px"><br>
 </center>
- 	
+ </div>
+ </div>
+
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
  	</script>
  	<script src="/static/js/bootstrap.min.js"></script>
