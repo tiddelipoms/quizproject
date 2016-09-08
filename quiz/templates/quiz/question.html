@@ -11,9 +11,15 @@
 </head>
 <body>
 	<h1>{{question_number}}. {{question}}</h1>
-	<p>{{answer1}}</p>
-	<p>{{answer2}}</p>
-	<p>{{answer3}}</p>
+	<p><form action="">
+		<input type="radio" name="answer">{{answer1}}
+	</form></p>
+	<p><form>
+		<input type="radio" name="answer">{{answer2}}
+	</form></p>
+	<p><form>
+		<input type="radio" name="answer">{{ answer3}}
+	</form></p>
 	<p><a href="{% url 'results_page' quiz_number %}">Nästa</a></p>
 
 <hr>
