@@ -38,7 +38,7 @@ def quiz(request, quiz_number):
 	return render(request, "quiz/quiz.html", context)
 
 def question(request, quiz_number, question_number):
-	quiz = Quiz.objects.get(quiz_number=question_number)
+	quiz = Quiz.objects.get(quiz_number=quiz_number)
 	questions = quiz.questions.all()
 	question = questions[int(question_number) - 1]
 	context = {
