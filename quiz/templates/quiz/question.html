@@ -25,10 +25,11 @@
 			</center>
 			<br>
 			<br>
-			<form action="">
-				<p><input type="radio" name="answer">{{answer1}}</p>
-				<p><input type="radio" name="answer">{{answer2}}</p>
-				<p><input type="radio" name="answer">{{ answer3}}</p>
+			<form action="% url'answer_page' quiz.quiz_number question_number %" method="post">
+				{% csrf_token %}
+				<p><input type="radio" name="answer" value= "1" checked=""/>{{answer1}}</p>
+				<p><input type="radio" name="answer" value="2" />{{answer2}}</p>
+				<p><input type="radio" name="answer" value="3" />{{ answer3}}</p>
 			</form>
 		</div>
 		<div class="col-xs-4">
@@ -37,7 +38,7 @@
 </div>
 
 <center>
-	<p><a href="{% url 'results_page' quiz_number %}">Nästa</a></p>
+	<p><button type="submit">Nästa</button></p>
 </center>
 
 <hr>
