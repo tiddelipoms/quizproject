@@ -1,29 +1,31 @@
+from quiz.models import Quiz
 from django.shortcuts import render
 
-quizzes = [
-	{
-		"quiz_number": 1,
-		"name": "Klassiska böcker",
-		"description": "Hur bra kan du dina klassiker?",
-		"image": "/static/Eniac.jpg",
-	},
-	{
-		"quiz_number": 2,
-		"name": "Största 1slagen",
-		"description": "Kan du dina lag?",
-		"image":"/static/madonna.png",
-	},
-	{
-		"quiz_number": 3,
-		"name": "Världens mest kända hackare",
-		"description": "Hackerhistoria är viktigt, kan du den?",
-		"image":"/static/teknisk.jpg",
-	},
-]
+
+#quizzes = [
+	#{
+		#"quiz_number": 1,
+		#"name": "Klassiska böcker",
+		#"description": "Hur bra kan du dina klassiker?",
+		#"image": "/static/Eniac.jpg",
+	#},
+	#{
+		#"quiz_number": 2,
+		#"name": "Största 1slagen",
+		#"description": "Kan du dina lag?",
+		#"image":"/static/madonna.png",
+	#},
+	#{
+		#"quiz_number": 3,
+		#"name": "Världens mest kända hackare",
+		#"description": "Hackerhistoria är viktigt, kan du den?",
+		#"image":"/static/teknisk.jpg",
+	#},
+#]
 
 def start(request):
 	context = {
-		"quizzes": quizzes,
+		"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "quiz/start.html", context)
 

@@ -16,3 +16,4 @@ class Question(models.Model):
 	quiz = models.ForeignKey(Quiz, related_name="questions")
 	def __str__(self):
 		return self.quiz.name + "/" + self.question
+		
