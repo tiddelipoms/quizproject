@@ -28,7 +28,7 @@ def start(request):
 	context = {
 		"quizzes": Quiz.objects.all(),
 	}
-	return render(request, "quiz/start.html", context)
+	return render(request, "quiz/startpage.html", context)
 
 def quiz(request, quiz_number):
 	context = {
