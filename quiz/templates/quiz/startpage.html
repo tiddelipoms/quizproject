@@ -23,19 +23,10 @@
 <center>
 <div class="container">
 	<div class="row">
-	{% for image in images %}
-	 <div class="equal-height col-xs-4">	 	
-	 	<img src= "{{image.image}}" style="width:50%">
-	 	<br>
-	  </div>
-	  {% endfor %}	
-	</div>
-</div>
-<div class="container">
-	<div class="row">
 	<br>
 	<p>{% for quiz in quizzes %} 
-	 <div class="equal-height col-xs-4">
+	 <div class="col-xs-4">
+	 	<img src= "{{quiz.quiz_image}}" class="img-circle" class="img-responsive" style="height: 100px; width: 100px; object-fit: contain">	 	
  		<p><br><br><a href="{%url 'quiz_page' quiz.quiz_number %}">
  		{{ quiz.name}}</a></p>
  	</div>

@@ -2,47 +2,9 @@ from quiz.models import Quiz
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-
-images = [
-	{
-		"image_number": 1,
-		"image": "/static/Eniac.jpg",
-	},
-	{
-		"image_number": 2,
-		"image":"/static/madonna.png",
-	},
-	{
-		"image_number": 3,
-		"image":"/static/teknisk.jpg",
-	},
-]
-
-
-	#{
-		#"quiz_number": 1,
-		#"name": "Klassiska böcker",
-		#"description": "Hur bra kan du dina klassiker?",
-		#"image": "/static/Eniac.jpg",
-	#},
-	#{
-		#"quiz_number": 2,
-		#"name": "Största 1slagen",
-		#"description": "Kan du dina lag?",
-		#"image":"/static/madonna.png",
-	#},
-	#{
-		#"quiz_number": 3,
-		#"name": "Världens mest kända hackare",
-		#"description": "Hackerhistoria är viktigt, kan du den?",
-		#"image":"/static/teknisk.jpg",
-	#},
-#]
-
 def start(request):
 	context = {
 		"quizzes": Quiz.objects.all(),
-		"images": images
 	}
 	return render(request, "quiz/startpage.html", context)
 
