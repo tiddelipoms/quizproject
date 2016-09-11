@@ -3,7 +3,22 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 
 
-#quizzes = [
+quizzes = [
+{
+		"quiz_number": 1,
+		"image": "/static/Eniac.jpg",
+	},
+	{
+		"quiz_number": 2,
+		"image":"/static/madonna.png",
+	},
+	{
+		"quiz_number": 3,
+		"image":"/static/teknisk.jpg",
+	},
+]
+
+
 	#{
 		#"quiz_number": 1,
 		#"name": "Klassiska böcker",
