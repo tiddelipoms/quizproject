@@ -18,6 +18,9 @@
 <form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
 {% csrf_token %}
 
+<div class="quiz-container">
+<div class="overlay">
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-xs-4">
@@ -27,8 +30,6 @@
 			<center>
 				<!--<img src="/static/hjul.jpg" style="width:228px">-->
 			</center>
-			<br>
-			<br>
 				<p><input type="radio" name="answer" value= "1" checked=""/>{{answer1}}</p>
 				<p><input type="radio" name="answer" value="2" />{{answer2}}</p>
 				<p><input type="radio" name="answer" value="3" />{{ answer3}}</p>
@@ -37,12 +38,14 @@
 		</div>
 	</div>	
 </div>
-<center>
+</div>
+<center><br>
 	<p>
 	<button type="submit">Nästa</button>
 	</p>
 </center>
 </form>
+
 
 <hr>
 <!--<center>

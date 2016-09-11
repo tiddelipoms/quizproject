@@ -25,6 +25,21 @@ h3 {
 	text-align: center;
 }
 
+.quiz-container {
+	position: relative;
+}
+
+.overlay { 
+	opacity: 0.5;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+}
+
 .column1 {
 	padding: 10px;
 	background-color: #9B90D4;
