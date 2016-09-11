@@ -4,7 +4,7 @@ from django.shortcuts import redirect
 
 
 images = [
-{
+	{
 		"image_number": 1,
 		"image": "/static/Eniac.jpg",
 	},
@@ -42,6 +42,7 @@ images = [
 def start(request):
 	context = {
 		"quizzes": Quiz.objects.all(),
+		"images": images
 	}
 	return render(request, "quiz/startpage.html", context)
 
