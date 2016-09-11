@@ -23,9 +23,9 @@
 <center>
 <div class="container">
 	<div class="row">
-	<p>{% for quiz in quizzes %}
+	<p>{% for image in images %}
 	 <div class="equal-height col-xs-4">	 	
-	 	<p><img src= "{{quiz.image}}" style="width:50%"></p>
+	 	<p><img src= "{{image.image}}" style="width:50%"></p>
 	 	<br>
 	  </div>
 	  {% endfor %}</p>	
@@ -41,8 +41,6 @@
  	</div>
 	{% endfor %}</p>
 	</div>
-	 <div class="equal-height col-xs-4">	 	
-	  </div>
 </div>	
 </center>
 

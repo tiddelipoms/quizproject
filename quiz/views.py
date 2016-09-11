@@ -3,17 +3,17 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 
 
-quizzes = [
+images = [
 {
-		"quiz_number": 1,
+		"image_number": 1,
 		"image": "/static/Eniac.jpg",
 	},
 	{
-		"quiz_number": 2,
+		"image_number": 2,
 		"image":"/static/madonna.png",
 	},
 	{
-		"quiz_number": 3,
+		"image_number": 3,
 		"image":"/static/teknisk.jpg",
 	},
 ]
