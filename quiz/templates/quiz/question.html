@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-	<h1>{{question_number}}. {{question}}</h1>
+	<h2>{{question_number}}. {{question}}</h2>
 <hr>
 
 <form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
