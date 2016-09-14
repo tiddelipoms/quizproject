@@ -13,13 +13,13 @@ body {
 h1 {
 	color: #05616E;
 	text-align: center;
-	font-size: 80px;
+	font-size: 400%;
 }
 
 h2 {
 	color: #05616E;
 	text-align: center;
-	font-size: 50px;
+	font-size: 200%;
 }
 
 h3 {
@@ -31,10 +31,10 @@ h3 {
 a {
     color: #409BB8;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40%;
 }
 
-p {font-size: 20px}
+p {font-size: 40%}
 
 .quiz-container {
 	position: relative;
