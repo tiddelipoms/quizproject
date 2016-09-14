@@ -31,10 +31,10 @@ h3 {
 a {
     color: #409BB8;
     text-decoration: none;
-    font-size: 40%;
+    font-size: 100%;
 }
 
-p {font-size: 40%}
+p {font-size: 100%}
 
 .quiz-container {
 	position: relative;
