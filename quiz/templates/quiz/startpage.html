@@ -23,7 +23,7 @@
 	<br>
 	<p>{% for quiz in quizzes %} 
 	 <div class="col-xs-4">
-	 	<center><img src= "{{quiz.quiz_image}}" class="img-circle" class="img-responsive" style="height: 60%; width: 60%; object-fit: contain">	 	
+	 	<center><img src= "{{quiz.quiz_image}}" class="img-circle" class="img-responsive" style="height: 70%; width: 70%; object-fit: contain">	 	
  		<p><br><br><a href="{%url 'quiz_page' quiz.quiz_number %}">
  		{{ quiz.name}}</a></p></center>
  	</div>
