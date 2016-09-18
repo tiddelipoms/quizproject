@@ -58,5 +58,7 @@ def results(request, quiz_number):
 		"correct": num_correct_answer,
 		"total": len(questions),
 		"questions": questions,
+		"quiz": Quiz.objects.get(quiz_number=quiz_number),
+		"quiz_number": quiz_number,
 	}
 	return render(request, "quiz/results.html", context)
