@@ -19,16 +19,27 @@
 {% if correct < total %}
 <h3>Mähh! Vad var fel?</h3>
 	<div class="results-container">
+	<div class="row">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-8">
+	<div class="overlay"></div>
 		{% for question in questions %}
 			<p>Frågan var: {{ question.question }}</p>
-			<p>Rätt svar, var nummer: {{ question.correct}}</p>
-			<p>Ditt svar, var nummer: {{ question.user_answer}}</p>
+			<p>Rätt svar: {% if question.correct == 1 %} {{question.answer1}}{% endif %}
+			{% if question.correct == 2 %} {{question.answer2}}{% endif %}
+			{% if question.correct == 3 %} {{question.answer3}}{% endif %}
+			</p>
+			<p>Ditt svar: {% if question.user_answer == 1 %}{{question.answer1}} {% endif %}
+			{% if question.user_answer == 2 %}{{question.answer2}} {% endif %}
+			{% if question.user_answer == 3 %}{{question.answer3}} {% endif %}
+			</p>
 			{% if question.correct == question.user_answer %}
 				<p>Du hade RÄTT</p>
 			{% else %}
 				<p>Du hade FEL</p>
 			{% endif %}
-		{% endfor %}
+		{% endfor %}</div>
+	<div class="col-xs-2"></div>
 	</div>
 {% endif %}
 </div>
