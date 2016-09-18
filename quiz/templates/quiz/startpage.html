@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="veiwport" content="width=device-width, initial-scale=1">
+		<title>start
+		</title>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<div id="body">
+	<h1>Ellas Spännande Quiz sida</h1>
+<hr>
+<div class="quiz-container">
+<div class="overlay"></div>
+<center>
+<div class="container">
+	<div class="row">
+	<br>
+	<p>{% for quiz in quizzes %} 
+	 <div class="col-xs-4">
+	 	<center>
+	 	<a href="{%url 'quiz_page' quiz.quiz_number %}">
+	 		<img src= "{{quiz.quiz_image}}" class="img-circle" class="img-responsive" style="height: 60%; width: 60%; object-fit: contain"
+	 	</a>
+ 		<p><br><br><a href="{%url 'quiz_page' quiz.quiz_number %}">
+ 		{{ quiz.name}}</a></p></center>
+ 	</div>
+	{% endfor %}</p>
+	</div>
+</div>	
+</center>
+</div>
+<hr>
+<div class="container">
+	<div class="row">
+		<center><h3>Möt skaparen Ella
+		</h3></center>
+	<center>
+		<img src="/static/Emoji_Big.png" alt="Emoji" style="width:10%"><br>
+	</center>
+	</div>
+ </div>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+ 	</script>
+ 	<script src="/static/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>

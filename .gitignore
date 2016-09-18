@@ -89,5 +89,3 @@ ENV/
 .ropeproject
 
 db.sqlite3
-
-quiz/templates/quiz/startpage.html
