@@ -13,30 +13,35 @@ body {
 h1 {
 	color: #05616E;
 	text-align: center;
-	font-size: 8vw;
+	font-size: 6vw;
 }
 
 h2 {
 	color: #05616E;
 	text-align: center;
-	font-size: 5vw;
+	font-size: 4vw;
 }
 
 h3 {
 	color: #FCFCFC;
 	text-align: center;
-	font-size: 3vw;
+	font-size: 2vw;
 }
 
+h4 {
+	color: #05616E;
+	text-align: center;
+	font-size: 2vw;
+}
 
 a {
     color: #409BB8;
     text-decoration: none;ß
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 p {
-	font-size: 1.5vw
+	font-size: 1vw
 }
 
 input[type=radio] {
@@ -60,8 +65,8 @@ input[type=radio] {
 }
 
 .fit {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .column1 {
