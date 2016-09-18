@@ -13,8 +13,27 @@
 <body>
 <h1>Grattis, du är klar! </h1><br>
 <div class="quiz-container">
-</div>
 <h2> Du fick {{ correct }} av {{total}} rätt </h2>
+<hr>
+
+{% if correct < total %}
+<h3>Mähh! Vad var fel?</h3>
+	<div class="results-container">
+		{% for question in questions %}
+			<p>Frågan var: {{ question.question }}</p>
+			<p>Rätt svar, var nummer: {{ question.correct}}</p>
+			<p>Ditt svar, var nummer: {{ question.user_answer}}</p>
+			{% if question.correct == question.user_answer %}
+				<p>Du hade RÄTT</p>
+			{% else %}
+				<p>Du hade FEL</p>
+			{% endif %}
+		{% endfor %}
+	</div>
+{% endif %}
+</div>
+	
+
 </div>
 <center><p><a href="{% url 'start_page' %}">Till Startsidan</a></p></center>
 <hr>

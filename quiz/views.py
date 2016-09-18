@@ -46,15 +46,17 @@ def answer(request, quiz_number, question_number):
 
 def results(request, quiz_number):
 	quiz = Quiz.objects.get(quiz_number=quiz_number)
-	questions = quiz.questions.all()
+	questions = list(quiz.questions.all())
 	saved_answers = request.session.get(quiz_number, {})
 	num_correct_answer = 0
 	for question_number, answer in saved_answers.items():
 		correct_answer = questions[int(question_number) - 1].correct
 		if correct_answer == answer:
 			num_correct_answer += 1
+		questions[int(question_number) - 1].user_answer = answer
 	context= {
 		"correct": num_correct_answer,
-		"total": questions.count(),
+		"total": len(questions),
+		"questions": questions,
 	}
 	return render(request, "quiz/results.html", context)
