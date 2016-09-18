@@ -12,18 +12,16 @@
 </head>
 <body>
 {% if correct == total %}
-<h1>Grattis, du är klar! </h1><br>
-	<h2> Du fick alla rätt</h2>
-{% endif %}
-
-{% if correct > 5 %}
-<h1>Grattis, du är klar! </h1><br>
-	<h2> Du fick {{ correct }} av {{total}} rätt </h2>
-	<br>
+		<h1>Grattis, du är klar! </h1><br>
+		<h2>Du fick alla rätt</h2>
+		<h2>Du är proffs på {{ quiz.name }} </h2>
+	{% elif correct > 5 %}
+		<h1>Grattis, du är klar! </h1><br>
+		<h2> Du fick {{ correct }} av {{total}} rätt </h2>
 	{% else %}
-	<h1> Det gick inte så bra</h1><br>
+	<h1> Det där gick inte så bra</h1><br>
 	<h2> Du fick {{ correct }} av {{total}} rätt </h2>
-	<br>
+	<br><h2>Gå tillbaka till Startsidan och testa igen</h2>
 {% endif %}
 	<hr>
 
