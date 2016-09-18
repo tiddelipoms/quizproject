@@ -11,10 +11,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
+{% if correct == total %}
 <h1>Grattis, du är klar! </h1><br>
+	<h2> Du fick alla rätt</h2>
+{% endif %}
 
+{% if correct > 5 %}
+<h1>Grattis, du är klar! </h1><br>
 	<h2> Du fick {{ correct }} av {{total}} rätt </h2>
+	<br>
+	{% else %}
+	<h1> Det gick inte så bra</h1><br>
+	<h2> Du fick {{ correct }} av {{total}} rätt </h2>
+	<br>
+{% endif %}
 	<hr>
+
 <center><p><a href="{% url 'start_page' %}">Till Startsidan</a></p></center>	
 
 {% if correct < total %}
